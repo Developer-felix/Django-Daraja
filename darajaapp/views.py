@@ -17,3 +17,31 @@ def index(request):
 def stk_push_callback(request):
         data = request.body
         # You can do whatever you want with the notification received from MPESA here.
+
+# Business Payment
+# from django_daraja.mpesa.core import MpesaClient
+
+# phone_number = '07xxxxxxxx'
+# amount = 1
+# transaction_desc = 'Description'
+# occassion = 'Occassion'
+# callback_url = request.build_absolute_uri(reverse('mpesa_business_payment_callback'))
+# response = self.cl.business_payment(phone_number, amount, transaction_desc, self.callback_url, occassion)
+# Salary Payment
+# from django_daraja.mpesa.core import MpesaClient
+
+# phone_number = '07xxxxxxxx'
+# amount = 1
+# transaction_desc = 'Description'
+# occassion = 'Occassion'
+# callback_url = request.build_absolute_uri(reverse('mpesa_salary_payment_callback'))
+# response = self.cl.business_payment(phone_number, amount, transaction_desc, self.callback_url, occassion)
+# Promotion Payment
+# from django_daraja.mpesa.core import MpesaClient
+
+# phone_number = '07xxxxxxxx'
+# amount = 1
+# transaction_desc = 'Description'
+# occassion = 'Occassion'
+# callback_url = request.build_absolute_uri(reverse('mpesa_promotion_payment_callback'))
+# response = self.cl.promotion_payment(phone_number, amount, transaction_desc, self.callback_url, occassion)
